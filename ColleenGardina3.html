@@ -1,0 +1,260 @@
+<!doctype html><html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Disney World Guide</title>
+
+<script type = "text/javascript">
+function validate() {
+
+ if(document.form.name.value == "" ) 
+	{
+            alert( "Please fill out name" );
+            document.form.name.focus() ;
+            return false;
+	}
+
+ if(document.form.Email.value == "" ) 
+	{
+            alert( "Please provide an email address" );
+            document.form.Email.focus() ;
+            return false;
+
+	}
+
+
+    return( true );
+      }
+
+</script>
+	<style>
+		.container{			width:100%;			margin:auto;			background-color: #d6eaf8;
+			font-family: sans-serif;
+		}
+		nav{
+			background-color: white;			width:100%;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		nav a{
+			display : block;			text-decoration : none;			color : #4a43ee;			text-align : left;			padding : 10px; 
+		}
+		.header-container header{			background-color : #a3c6df;			color : white; 			padding : 60 px;
+		}
+		nav a:hover {			background-color: #a3c6df;
+		}
+		#content{
+			background-color : #d6eaf8;			width : 65%;			float : left; 			height : auto;			padding-bottom : 100px;  
+			padding-right: 15px;  
+			padding-left: 50px;      	
+		}
+		#form{			width : 25%;			float : right;			background-color : #a3c6df;			height : auto;
+			padding-right: 25px;
+			padding-bottom: 500px;
+			
+		}
+		.main-container {			background-color : #d6eaf8;			height : 100%;
+		}
+		.clear-fix{
+			clear : both;
+		}			nav  li {
+			display: inline;			position: relative; 		}		nav ul li{			list-style-type: none;			display: inline-block;			padding-right: 100px; 					}					nav ul ul {			position: absolute; 			left: 0; 			top: 100%; 			background: white;			display: none; 		}			nav ul ul ul {			left: 100%;			top: 0;			background: white;			display: none;		}			li:hover > ul {			display: block;		}	
+		table.hotels{
+			margin-left: 10px;
+			margin-right: 10px;		
+			border: thin solid black;
+			border-collapse: collapse;
+			font-family: geneva;
+		}
+		td.hotels{
+			border: thin dotted gray;
+			padding: 5px;
+		}
+
+		th.hotels{
+			border: thin dotted gray;
+			padding: 5px;
+			background-color: #ff6347;
+		}
+		caption {
+			font-family: geneva;
+			font-size: 20px;
+			font-weight: bold;
+			color: tomato;
+		}
+		ul.tips{
+			font-family: geneva;
+			color: #618685;
+			list-style-type: square;
+	
+		}
+
+		img.body {
+  			border: 1px solid #ddd;
+  			border-radius: 4px;
+  			padding: 5px;
+  			width: 150px;
+		}
+
+		.footer-container{
+			clear : both;
+			background-color : #a3c6df;
+			padding : 10px;
+			color: blue;
+			border: 2px solid #d6eaf8;
+		}    
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header-container">
+			<header>
+			<h1><center>A Guide to <img src="DisneyworldLogo.png" alt="Disney World Logo" width="300px" height="100px" style="padding-top: 10px"></center></h1>
+			</header>
+			
+						<nav > 					<ul style="align-left">						<li><a href="ColleenGardina1.html">Home</a></li>						<li><a href="ColleenGardina2.html">Park Info</a></li>
+						<li><a href="ColleenGardina3.html">Planning Tips</a></li>
+						<li><a href="#">Additional Sites</a>
+							<ul>
+							<li><a href="https://disneyworld.disney.go.com/">Official Disney World Website</a></li>
+							<li><a href="https://www.disneytouristblog.com/">Disney Tourist Blog</a></li>
+							<li><a href="https://allears.net/">All Ears</a></li>		
+						</ul>
+				</nav>
+	</div>
+
+<div class="main-container">	<div id="content">
+
+		<table class="hotels">
+		<caption>Where Should I Stay?</caption>
+			<tr style="align-left">
+				<th class="hotels"></th>
+				<th class="hotels">Value</th>
+				<th class="hotels">Moderate</th>
+				<th class="hotels">Deluxe</th>
+			</tr>
+			<tr bgcolor="white">
+				<td class="hotels"><b>Price Range</b></td>
+				<td class="hotels">$150-$350/night</td>
+				<td class="hotels">$250-$400/night</td>
+				<td class="hotels">$500/night and up</td>	
+			</tr>
+			<tr bgcolor="#ffe9ec">
+				<td class="hotels"><b>Dining</b></td>
+				<td class="hotels">quick service only</td>
+				<td class="hotels">quick service, lounges, full-service (some)</td>
+				<td class="hotels">quick service, lounges, full-service, and fine dining</td>
+			</tr>
+			<tr bgcolor="white">
+				<td class="hotels"><b>Pool?</b></td>
+				<td class="hotels">Yes</td>
+				<td class="hotels">Yes w/slide, quiet pools</td>
+				<td class="hotels">Yes w/slide, quiet pools</td>
+			</tr>
+			<tr bgcolor="#ffe9ec">
+				<td class="hotels"><b>Transportation to Parks</b></td>
+				<td class="hotels">buses, Disney's Skyliner Goldolas (Pop Century Only)</td>
+				<td class="hotels">buses, Disney's Skyliner Goldolas (Caribbean Beach Only)</td>
+				<td class="hotels">buses, Disney's Skyliner Goldolas, monorail, boat, walking paths</td>
+			</tr>
+
+			<tr>
+			<td></td>
+			<td><figure><a href="Pop.jpeg"><img src="Pop.jpeg" alt="Pop Century" width="150px" height="75px" class="body"><figcaption>Pop Century Resort</figcaption</figure></td>
+			<td><figure><a href="Coronado.jpeg"><img src="Coronado.jpeg" alt="Coronado" width="150px" height="75px" class="body"><figcaption>Coronado Springs Resort</figcaption></figure></td>
+			<td><figure><a href="BeachClub.jpg"><img src="BeachClub.jpg" alt="Beach Club" width="150px" height="75px" alt="body"><figcaption>Beach Club Resort</figcaption></figure></td>
+			</br>
+
+
+		</table>
+
+	<ul class="tips"><u><h2><center>Top Disney World Planning Tips:</center></u></h2>
+		<li>Stay at a Disney hotel</li>
+		<li>Check a crowd <a href="https://wdwprepschool.com/disney-world-crowd-calendar/">calendar</a> for the best times to go</li>
+		<li>Book <a href="https://disneyworld.disney.go.com/faq/fast-pass-plus/product-description/">fastpass+</a> reservations 60 days in advance to skip the long ride lines when you arrive</li>
+		<li>Get to the parks at least 30 minutes before opening</li>
+		<li>Book dining reservations 180 days in advance</li>
+	</ul>
+		<h3 style="color:darkblue">Click here to learn how to use the My Disney Experience App</h3>		<video controls width="320" height="240" poster="DisneyWorldAppPoster.png">
+  		<source src="DisneyWorldAppTutorial.mp4" type="video/mp4">
+ 		 <source src="DisneyWorldAppTutorial.ogg" type="video/ogg">
+  		Your browser does not support the video tag.
+		</video>
+				
+	</div>
+
+
+<aside id="form">
+<fieldset>
+
+<b><legendclass="legend" style="color:purple">Contact Us for a Quote</legend></b>
+<form name="form" action="thankyou.html" onsubmit="return validate()" method="post">
+
+
+<table class="form">
+<th></th>
+<th></th>
+
+<tr>
+<td><label for="Name">Name</label></td>
+<td style="width:40%"><input type="text" placeholder="First Name, Last Name" name="name"></td>
+</tr>
+
+<tr>
+<td><label for="Email">Email</label></td>
+<td style="width:40%"><input type="text" name="Email"></td>
+</tr>
+
+<tr>
+<td><label for="date">Travel Dates*</label><br></td>
+<td>Arrival &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" value="">Departure &nbsp<input type="date" value=""></td>
+</tr>
+
+
+<tr>
+<td rowspan="4"  valign="top">
+<label for"Hotel Choice">Hotel Choice</label>
+<td><input type="radio" name="Value">Value</td>
+</td>
+</tr>
+
+<tr><td><input type="radio" name="Moderate">Moderate</td></tr>
+<tr><td><input type="radio" name="Deluxe">Deluxe</td></tr>
+
+	
+	<tr> 
+	<td><select class="SelectOptions">
+	<option value="Tickets">Ticket Options</option>
+	<option value="Tickets">1 Day</option>
+	<option value="Tickets">2 Days</option>
+	<option value="Tickets">3 Days</option>
+	<option value="Tickets">4+ Days</option>
+	</td>
+	</tr>
+	</select>
+
+<tr valign="top">
+<td><label for="Requests">Special Requests?</label></td>
+<td style="width:60%"><textarea name="comment" form="usrform" rows="5" cols="25" placeholder="*If you have flexible travel dates, list them here."></textarea></br></td>
+</tr>
+
+
+
+<tr>
+<td rowspan="3"  valign="top">
+<b><label for"Submit"></label></b>
+<td><input type="submit" value="Submit"></td>
+
+</tr>
+
+</form>
+</table>
+</fieldset></aside>
+
+<div class="footer-container">
+		<footer> <div><center>Copyright &copy Colleen Gardina. LBSC671.</center></footer></div>
+
+</div>
+</body>
+</html>
